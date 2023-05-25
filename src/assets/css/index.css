@@ -1,0 +1,23 @@
+.cards-container {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.logo{
+    width: 250px;
+}
+.img_pussinboots{
+    width: 100%;
+    height: 100vh;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.draggable-area {
+    -webkit-app-region: drag;
+}
+.disable-selection{
+    -webkit-user-select: none;
+}

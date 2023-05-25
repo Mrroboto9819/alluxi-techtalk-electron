@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="../src/assets/css/index.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Tech Talk</title>
+  </head>
+  <body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light draggable-area disable-selection">
+			<div class="container-fluid">
+					<img src="../src//assets/img/img-alluxi-horizontal-color@3x.png" alt="logo" class="logo">
+			</div>
+		</nav>
+		<div class="cards-container p-3">
+			<div class="p-2">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Send OS Notification</h5>
+						<div class="mb-3">
+							<label for="input__title" class="form-label-sm">Title</label>
+							<input type="text" class="form-control" name="input__title" id="input__title" placeholder="ingresar...">
+						</div>
+						<div class="mb-3">
+							<label for="input__txt" class="form-label-sm">Text</label>
+							<textarea type="text" class="form-control" name="input__txt" id="input__txt" placeholder="ingresar..."></textarea>
+						</div>
+						<button id="send__notification" class="btn btn-primary">
+								Send
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="p-2">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Create new window</h5>
+						<div class="mb-3">
+							<label for="window_resolution" class="form-label">Resolution</label>
+							<select class="form-select-sm" name="window_resolution" id="window_resolution">
+								<option selected disabled value="">--</option>
+								<option value="size1">1920 x 1080</option>
+								<option value="size2">1280 x 800</option>
+								<option value="size3">800 x 600</option>
+							</select>
+						</div>
+						<button id="create__window" class="btn btn-primary">
+								Create
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../src/renders/render.js"></script>
+		</body>
+</html>
