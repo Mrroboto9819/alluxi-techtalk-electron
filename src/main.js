@@ -8,7 +8,7 @@ const createWindow = () => {
 	const win = new BrowserWindow({
 		width: 1920,
 		height: 1080,
-		frame: true,
+		frame: false,
 		webPreferences: {
 			preload: path.join(__dirname, 'preloads/preload.js'),
 			nodeIntegration: true,
@@ -35,7 +35,7 @@ app.on('window-all-closed', () => {
 
 
 /* 
-	## Functionalities
+	## Functionalities IPC Main -> https://www.electronjs.org/docs/latest/api/ipc-main
 */
 ipcMain.on(SEND_NOTIFICATION, (e, txt, title) => {
 	new Notification({ title: title, body: txt }).show()
@@ -44,7 +44,8 @@ ipcMain.on(SEND_NOTIFICATION, (e, txt, title) => {
 ipcMain.on(CREATE_WINDOW, (e, x, y) => {
 	const win = new BrowserWindow({
 		width: x,
-		height: y
+		height: y,
+		frame: false
 	})
 	win.loadFile('./public/newWindow.html')
 })

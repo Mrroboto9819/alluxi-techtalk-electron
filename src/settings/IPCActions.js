@@ -1,5 +1,5 @@
 const IPC_ACTIONS = {
-    Window:{
+    Window: {
         SEND_NOTIFICATION: "SEND_NOTIFICATION",
         CREATE_WINDOW: "CREATE_WINDOW",
     }

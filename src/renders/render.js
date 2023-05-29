@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	*/
 	let btn_notification = this.getElementById("send__notification")
 	let btn_create_window = this.getElementById("create__window")
+	
 	let title = this.getElementById("input__title")
 	let txt = this.getElementById("input__txt")
 	let windowSize = this.getElementById("window_resolution")
